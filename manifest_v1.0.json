@@ -1,0 +1,41 @@
+{
+  "release": "Lesemodus-mit-Layout-fix v1.0",
+  "date": "2026-10-23",
+  "engine": "AGS 3.6.0.55 PE32 i386",
+  "features": [
+    "Lesemodus v0.3.3 (including room27 auto-timed film exception)",
+    "DeutschLayout v0.32 (757 call sites; 1400 fingerprint records)",
+    "v7.45u German language file"
+  ],
+  "original_prefix_sha256": "42e1f511cdc1cd7886f0b55666056e27ee09d3d2dacc64eb51c6f634796482c4",
+  "readmode_v033_sha256": "43c55d0042cfd41ce2c9dba0036e3ae6efaa0f8eb156eeb4a05b9f974fb5d8af",
+  "layout_v032_sha256": "cdb12fec5e93a1f6e5c0ad48a058d147f805cc2a6e3c1d21b1d41bbe5b0fdeac",
+  "layout_v032_data_sha256": "7f47f69357992c39ae7244b9637dff2dcecdbcff85f977678835bcb113f3d66b",
+  "layout_quiet_data_sha256": "af72fc7ee445e164876fdc6c6c2428215993325af313b3055d12cbe141d20c9e",
+  "combined_exe_sha256": "41472082d91dc0c30a6930564fe8e3873b31177e9fe844573efc812ad72782f6",
+  "combined_exe_length": 3316224,
+  "german_tra_sha256": "29e5a52abff5212efc20ca0be805a6dc2a450826e6143a977ea9a2111cc2e064",
+  "original_prefix_changed_byte_positions": 97,
+  "hook": {
+    "file_offset": "0xDEEB",
+    "call_target": "0x6808E1",
+    "bridge_source": "0x680901",
+    "bridge_target": "0x770000",
+    "layout_tail_target": "0x40C8F0",
+    "cleanup": "0x680906",
+    "original_return": "0x40EAF0"
+  },
+  "changed_layout_code_only": {
+    "runtime_offset": "0x1BC",
+    "original": "885c243f89",
+    "new": "e9140a0000",
+    "purpose": "Skip pilot file logging after the layout coordinate adjustment by jumping to verified normal function epilogue 0x770BD5"
+  },
+  "translation_content_changed": false,
+  "original_game_data_included": false,
+  "client_patcher_required": false,
+  "checks_german_tra_at_runtime": false,
+  "windows_playtest_performed": false,
+  "expected_exe_in_player_zip": "Lesemodus-mit-Layout-fix.exe",
+  "expected_cmd_in_player_zip": "Lesemodus-mit-Layout-fix.cmd"
+}
